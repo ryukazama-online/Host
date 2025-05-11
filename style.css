@@ -1,0 +1,123 @@
+body {
+  background-color: #000;
+  color: #39ff14;
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  border-bottom: 2px solid #39ff14;
+}
+
+h1 {
+  font-size: 2rem;
+  text-shadow: 0 0 5px #39ff14;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  border-left: 3px solid #39ff14;
+  padding-left: 1rem;
+}
+
+ul {
+  list-style-type: square;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #39ff14;
+  margin-top: 2rem;
+}
+
+.music-player {
+  margin: 2rem auto;
+  max-width: 400px;
+  text-align: center;
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #39ff14;
+  box-shadow: 0 0 10px #39ff14;
+}
+
+.music-player button {
+  background-color: transparent;
+  border: 1px solid #39ff14;
+  color: #39ff14;
+  padding: 0.5rem 1rem;
+  font-family: 'Fira Code', monospace;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.music-player select,
+.music-player input[type=range] {
+  margin: 0.5rem 0;
+  background: #000;
+  color: #39ff14;
+  border: 1px solid #39ff14;
+  padding: 0.3rem;
+  font-family: 'Fira Code', monospace;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.click-effect {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #39ff14;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 15px #39ff14;
+  animation: pop 0.8s ease-out forwards;
+  z-index: 1000;
+}
+
+@keyframes pop {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f0f0f;
+  padding: 10px 20px;
+  color: #39ff14;
+  font-family: 'Courier New', Courier, monospace;
+  border-bottom: 2px solid #39ff14;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  color: #39ff14;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}

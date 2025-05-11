@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>neon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-left">Home</div>
+    <div class="nav-right">Support: <a href="tel:+6285813220358">+62 858-1322-0358</a></div>
+  </header>
+
+  <header>
+    <h1 id="typing"></h1>
+    <p>Welcome to my new project 🌐</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>🧠 Skills</h2>
+      <ul>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>HTML/CSS</li>
+        <li>React & Node.js</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>💼 Projects</h2>
+      <p>Coming soon...</p>
+    </section>
+  </main>
+
+  
+
+  <footer>
+    <p>© 2025 Pio</p>
+  </footer>
+
+  <!-- Music Player -->
+  <div class="music-player">
+    <button id="music-toggle">▶️ Play Music</button>
+
+    <div id="music-settings" class="hidden">
+      <label for="track-select">🎶 Select Track:</label>
+      <select id="track-select">
+        <option value="music/No. 1 Party Anthem.mp3">No. 1 Party Anthem</option>
+        <option value="music/505.mp3">505</option>
+        <option value="music/I Wanna Be Yours.mp3">I Wanna Be Yours</option>
+      </select>
+
+      <label for="volume-range">🔊 Volume:</label>
+      <input type="range" id="volume-range" min="0" max="1" step="0.01" value="0.5" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
